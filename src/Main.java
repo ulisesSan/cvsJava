@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args)throws IOException {
         Scanner entrada = new Scanner(System.in);
         Consulta con = new Consulta();
+        String Archivo = System.getProperty("user.home") + "/Documents/";
         String base, ruta, usuario,contraseña, sql,tabla;
         System.out.println("Para insertar .cvs inserte los siguentes requisitos \n Base de datos \n contraseña" +
                 "\n Usuario \n Direccion de su archivo");
@@ -18,7 +19,7 @@ public class Main {
             tabla = entrada.next();
             System.out.println("Introduzca la ruta de su archivo");
             ruta = entrada.next();
-            sql = "LOAD DATA INFILE '"+ruta+"' " +
+            sql = "LOAD DATA LOCAL INFILE '"+ruta+"' " +
                     "INTO TABLE "+tabla+" FIELDS TERMINATED BY ',' LINES TERMINATED BY '\\n' IGNORE 1 ROWS();";
             con.consulta(sql,contraseña,usuario,base);
         }catch(IOException e){
