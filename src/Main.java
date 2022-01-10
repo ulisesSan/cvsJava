@@ -15,9 +15,9 @@ public class Main {
             contraseña = entrada.next();
             System.out.println("Introduzca el nombre de su base de datos");
             base = entrada.next();
-            System.out.println("Introduzca el de su tabla");
+            System.out.println("Introduzca el nombre de su tabla");
             tabla = entrada.next();
-            System.out.println("Introduzca la ruta de su archivo");
+            System.out.println("Introduzca la ruta de su archivo (Se necesitan dos diagonales '\\'");
             ruta = entrada.next();
             AbrirArchivo archivo = new AbrirArchivo();
             //archivo.abrirarchivo();
