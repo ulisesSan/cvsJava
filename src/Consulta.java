@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -14,7 +15,7 @@ public class Consulta {
             sentencia.executeUpdate(sql);
             sentencia.close();
         }catch(Exception e){
-            System.out.println(e);
+            JOptionPane.showMessageDialog(null,e);
             return false;
         }
         return true;
