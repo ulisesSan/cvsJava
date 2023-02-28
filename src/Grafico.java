@@ -94,7 +94,7 @@ public class Grafico extends JFrame {
 
     private void configurarVentana() {
         //se le da un nombre a la ventana
-        this.setTitle("Esta Es Una Ventana");
+        this.setTitle("Agrega csv a la base de datos");
         //Se le asigna un tamaño
         this.setSize(510, 310);
         //Se le hace la centracion a la ventana
